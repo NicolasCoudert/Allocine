@@ -1,0 +1,41 @@
+img{
+    width:150px;
+    height:150px;
+    }
+
+#divCinema {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.spancinema {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: blue
+}
+
+.spanfilm{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#divFilm {
+    display: flex;
+    justify-content: flex-start;
+    background-color: orange;
+}
+
+.spanacteur {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#divActeur {
+    display: flex;
+    justify-content: flex-start;
+    background-color: green;
+}

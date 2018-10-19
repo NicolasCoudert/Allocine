@@ -1,0 +1,44 @@
+function AfficherLesFilms(idCinema)
+{
+
+    //alert(idCinema);
+$.ajax
+(
+    {
+        type:"get",
+        url:"index.php/IndexCinema/AfficherLesFilms",
+        data:"idCine="+idCinema,
+        success:function(data)
+        {
+            $("#divFilm").empty();
+            $("#divFilm").append(data);
+        },
+        error:function()
+        {
+            alert("Ereur d'affichage sur les Films");
+        }
+    }
+);
+}
+
+function AfficherLesActeurs(idActeur)
+{
+
+    $.ajax
+    (
+        {
+            type:"get",
+            url:"index.php/IndexCinema/AfficherLesActeurs",
+            data:"idFilm="+idFilm,
+            success:function(data)
+            {
+                $('#divActeur').empty();
+                $('#divActeur').append(data);
+            },
+            error:function()
+            {
+                alert("Erreur d'affichage sur les Acteurs");
+            }
+        }
+    );
+}
