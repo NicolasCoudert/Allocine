@@ -20,25 +20,24 @@ $.ajax
     }
 );
 }
-
-function AfficherLesActeurs(idActeur)
+function voter(note,btn)
 {
-
-    $.ajax
-    (
+   
+$.ajax
+(
+    {
+        type:"get",
+        url:"index.php/IndexCinema/AjoutVote",
+        data:"note="+note+"&film="+btn.val(),
+        success:function(data)
         {
-            type:"get",
-            url:"index.php/IndexCinema/AfficherLesActeurs",
-            data:"idFilm="+idFilm,
-            success:function(data)
-            {
-                $('#divActeur').empty();
-                $('#divActeur').append(data);
-            },
-            error:function()
-            {
-                alert("Erreur d'affichage sur les Acteurs");
-            }
+            $("#divFilm").empty();
+            $("#divFilm").append(data);
+        },
+        error:function()
+        {
+            alert("Ereur d'affichage sur les votes");
         }
-    );
+    }
+);
 }
