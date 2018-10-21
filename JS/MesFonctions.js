@@ -58,7 +58,7 @@ $.ajax
         },
         error:function()
         {
-            alert("Ereur d'affichage sur les Acteurs");
+            alert("Erreur d'affichage sur les Acteurs");
         }
     }
 );

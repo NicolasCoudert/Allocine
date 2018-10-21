@@ -31,6 +31,8 @@
             </div> 
         <h2>Les Films proposer par ce cinéma</h2>
             <div id='divFilm'></div>
+
+        <br><h2>Acteurs jouant dans ce film</h2>
             <div id='divActeur'></div>
     </main>
     <footer>
