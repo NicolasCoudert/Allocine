@@ -41,3 +41,25 @@ $.ajax
     }
 );
 }
+
+
+function AfficherLesActeurs(idFilm)
+{
+$.ajax
+(
+    {
+        type:"get",
+        url:"index.php/IndexCinema/AfficherLesActeurs",
+        data:"idFilm="+idFilm,
+        success:function(data)
+        {
+            $("#divActeur").empty();
+            $("#divActeur").append(data);
+        },
+        error:function()
+        {
+            alert("Ereur d'affichage sur les Acteurs");
+        }
+    }
+);
+}

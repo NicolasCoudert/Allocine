@@ -31,6 +31,7 @@
             </div> 
         <h2>Les Films proposer par ce cinéma</h2>
             <div id='divFilm'></div>
+            <div id='divActeur'></div>
     </main>
     <footer>
         Mentions légales bla bla bla bla

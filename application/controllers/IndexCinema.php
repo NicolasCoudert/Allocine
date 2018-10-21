@@ -24,5 +24,13 @@ class IndexCinema extends CI_controller
         $this->load->model("Model_Vote");
         $data['lesVotes']=$this->Model_Vote->AjouterVote($note,$idFilm);
     }
+
+    public function AfficherLesActeurs()
+    {
+        $idFilm = $_GET['idFilm'];
+        $this->load->model("Model_Acteur");
+        $data['lesActeurs']=$this->model_Acteur->GetAllActeurs($idFilm);
+        $this->load->view("View_Acteur", $data);
+    }
 }
 ?>
