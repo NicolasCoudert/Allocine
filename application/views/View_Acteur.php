@@ -4,9 +4,8 @@
 ?>
     <span class="spanacteur">
 <?php
-            echo "".$unActeur->codeActeur."<br>".$unActeur->nomActeur."<br><br><img src='".$unActeur->imageActeur."'><br>"
+            echo "".$unActeur->codeActeur."<br>".$unActeur->nomActeur."<br><img src='".$unActeur->imageActeur."'></span><br>"
 ?>
-    </span>
 <?php    
         }
 ?>
